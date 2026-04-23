@@ -29,7 +29,7 @@ const experience = [
   {
     company: "Sapphire Webs",
     role: "Web & UI/UX Designer",
-    when: "Dec 2024 - Jan 2025",
+    when: "Dec 2024 - Apr 2025",
     place: "Offline",
   },
   {
