@@ -37,8 +37,8 @@ const Contact = () => {
               <ArrowUpRight className="w-8 h-8 md:w-12 md:h-12 text-accent group-hover:rotate-45 group-hover:translate-x-1 transition-transform duration-500" />
             </a>
             <p className="mt-6 text-background/60 max-w-md leading-relaxed">
-              Available for internships, freelance projects and full-time
-              opportunities in full-stack and data roles.
+              Available for software engineering, full-stack development, AI,
+              machine learning and data-focused opportunities.
             </p>
           </div>
 
@@ -63,7 +63,7 @@ const Contact = () => {
 
         <div className="mt-28 pt-8 border-t border-background/15 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-xs uppercase tracking-[0.25em] text-background/50">
           <div>© 2026 Sampath Raja A — All rights reserved</div>
-          <div>Designed & built with ✦ in Coimbatore</div>
+          <div>Designed & built in Coimbatore</div>
         </div>
       </div>
     </section>

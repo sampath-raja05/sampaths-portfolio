@@ -1,7 +1,10 @@
 const items = [
   "React",
+  "Next.js",
+  "FastAPI",
   "Tailwind CSS",
   "MongoDB",
+  "PostgreSQL",
   "Python",
   "Docker",
   "Machine Learning",

@@ -4,24 +4,28 @@ const groups = [
     items: ["Python", "JavaScript"],
   },
   {
-    label: "Frameworks",
-    items: ["React.js"],
+    label: "Frontend",
+    items: ["React.js", "Next.js", "Tailwind CSS"],
+  },
+  {
+    label: "Backend",
+    items: ["Node.js", "FastAPI", "REST APIs"],
   },
   {
     label: "Data",
-    items: ["MongoDB", "MySQL"],
+    items: ["MongoDB", "MySQL", "PostgreSQL", "PostGIS", "Prisma", "Supabase"],
   },
   {
     label: "Tools",
-    items: ["Docker", "GitHub Actions", "Tailwind CSS", "Leaflet"],
+    items: ["Docker", "GitHub Actions", "Leaflet", "Clerk"],
   },
   {
-    label: "Practices",
+    label: "AI / ML",
     items: ["Generative AI", "Prompt Engineering", "UI/UX", "Machine Learning"],
   },
   {
-    label: "Languages spoken",
-    items: ["English", "Tamil", "German"],
+    label: "Certifications",
+    items: ["AWS Generative AI", "Oracle Cloud Infrastructure", "Web Design"],
   },
 ];
 
@@ -29,7 +33,7 @@ const experience = [
   {
     company: "Sapphire Webs",
     role: "Web & UI/UX Designer",
-    when: "Dec 2024 - Jan 2025",
+    when: "Dec 2024 - Apr 2025",
     place: "Offline",
   },
   {
@@ -106,10 +110,16 @@ const Skills = () => {
               Education
             </div>
             <div className="font-display text-xl text-foreground mt-2 leading-snug">
-              B.Tech, Artificial Intelligence & Data Science
+              B.Tech, Artificial Intelligence & Data Science - CGPA 8/10
             </div>
             <div className="text-muted-foreground text-sm mt-1">
-              SNS College of Engineering · Graduated 2026
+              SNS College of Engineering, Coimbatore · 2022 - 2026
+            </div>
+            <div className="text-muted-foreground text-sm mt-4">
+              HSC, Science - 74.0% · 2022
+            </div>
+            <div className="text-muted-foreground text-sm mt-1">
+              SSLC - 84.6% · 2020
             </div>
           </div>
         </div>

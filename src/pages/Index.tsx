@@ -14,10 +14,10 @@ const Index = () => {
   return (
     <>
       {/* SEO */}
-      <title>Sampath Raja A — Full-Stack Developer & Data Analyst Portfolio</title>
+      <title>Sampath Raja A — Software Engineer & Full-Stack Developer Portfolio</title>
       <meta
         name="description"
-        content="Portfolio of Sampath Raja A — a full-stack developer and data analyst building React, Node.js and AI-powered web applications."
+        content="Portfolio of Sampath Raja A — a software engineer and AI & Data Science graduate building full-stack applications with React, Next.js, FastAPI and PostgreSQL."
       />
       <link rel="canonical" href="/" />
 

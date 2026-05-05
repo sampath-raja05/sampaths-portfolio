@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="space-y-6">
           <p className="font-sans text-sm uppercase tracking-[0.25em] text-muted-foreground mask-word">
             <span style={{ animationDelay: "0.1s" }}>
-              Engineer · Data Analyst · Full-Stack Developer
+              Software Engineer · Full-Stack Developer · AI & Data Science
             </span>
           </p>
 
@@ -32,8 +32,8 @@ const Hero = () => {
 
           <div className="grid md:grid-cols-2 gap-10 pt-8 items-end">
             <p className="font-display italic text-2xl md:text-3xl text-foreground/80 max-w-lg leading-snug reveal">
-              Crafting clean, intelligent web experiences - where{" "}
-              <span className="text-accent">design meets data</span>.
+              Building scalable full-stack products where{" "}
+              <span className="text-accent">AI, data and clean code</span> meet real-world problems.
             </p>
 
             <div className="flex md:justify-end items-center gap-6 reveal reveal-delay-2">
@@ -44,7 +44,7 @@ const Hero = () => {
                 <span className="w-12 h-12 rounded-full border border-foreground/80 flex items-center justify-center group-hover:bg-accent group-hover:border-accent group-hover:text-accent-foreground transition-all duration-500">
                   <ArrowDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
                 </span>
-                View selected work
+                View projects
               </a>
             </div>
           </div>
@@ -57,8 +57,8 @@ const Hero = () => {
             <div className="text-foreground mt-1">Coimbatore, IN</div>
           </div>
           <div className="hidden md:block">
-            <div className="text-foreground/50">Currently</div>
-            <div className="text-foreground mt-1">B.Tech AI & DS · Graduated 2026</div>
+            <div className="text-foreground/50">Graduate</div>
+            <div className="text-foreground mt-1">B.Tech AI & DS · CGPA 8/10</div>
           </div>
           <div>
             <div className="text-foreground/50">Status</div>

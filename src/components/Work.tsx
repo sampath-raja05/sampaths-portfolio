@@ -5,21 +5,20 @@ const projects = [
     n: "01",
     title: "Propspace AI",
     year: "2025",
-    role: "Full-stack · AI",
+    role: "Full-stack · AI Analytics",
     href: "https://prop-space-ai-w8t9.vercel.app/",
     description:
-      "AI-powered property valuation platform with real-time market analysis, investment insights and interactive geospatial dashboards.",
-    stack: ["Next.js", "TypeScript", "FastAPI", "PostgreSQL · PostGIS", "Leaflet"],
+      "AI-powered real estate analytics platform with PostGIS spatial search, ML valuation, live market overlays and investment insight dashboards.",
+    stack: ["Next.js", "TypeScript", "FastAPI", "PostgreSQL/PostGIS", "Tailwind CSS", "Leaflet"],
   },
   {
     n: "02",
-    title: "AI Fraud Detection",
-    year: "2024",
-    role: "ML · Frontend",
-    href: "https://ai-fraud-guard.vercel.app/",
+    title: "HireGenius",
+    year: "2025",
+    role: "Full-stack · AI Interviews",
     description:
-      "Real-time fraud detection dashboard with ML-based risk analysis, transaction monitoring, anomaly detection and explainable insights.",
-    stack: ["TypeScript", "Tailwind CSS", "ML"],
+      "AI interview platform with interviewer and interviewee flows, smart onboarding, scheduling, credit-based payments, video sessions and feedback.",
+    stack: ["Next.js", "Clerk", "Prisma", "Supabase", "Tailwind CSS"],
   },
   {
     n: "03",
@@ -28,8 +27,8 @@ const projects = [
     role: "Frontend",
     href: "https://weather-now-gamma-livid.vercel.app/",
     description:
-      "Minimal city-based weather app with real-time temperature, humidity & wind details, fast API data fetching and a calm responsive UI.",
-    stack: ["React", "JavaScript", "REST APIs"],
+      "Responsive city-based weather app with live API data, real-time temperature, humidity and wind details, plus graceful invalid-city handling.",
+    stack: ["React.js", "JavaScript", "HTML", "CSS", "REST APIs"],
   },
 ];
 
@@ -52,51 +51,55 @@ const Work = () => {
         </div>
 
         <div className="divide-y divide-border border-y border-border">
-          {projects.map((p) => (
-            <a
-              href={p.href}
-              key={p.n}
-              target="_blank"
-              rel="noreferrer"
-              className="group block py-10 md:py-14 relative overflow-hidden lift"
-            >
-              <div className="grid md:grid-cols-12 gap-6 items-baseline relative z-10">
-                <div className="md:col-span-1 text-sm text-muted-foreground">
-                  {p.n}
-                </div>
-                <div className="md:col-span-5">
-                  <h3 className="font-display text-4xl md:text-6xl text-foreground tracking-tight transition-transform duration-700 group-hover:translate-x-2">
-                    {p.title}
-                  </h3>
-                </div>
-                <div className="md:col-span-4 text-muted-foreground text-base leading-relaxed max-w-md">
-                  {p.description}
-                </div>
-                <div className="md:col-span-2 flex items-start justify-between md:justify-end gap-4">
-                  <div className="text-sm text-muted-foreground">
-                    <div>{p.year}</div>
-                    <div className="text-foreground/70 mt-1">{p.role}</div>
+          {projects.map((p) => {
+            const ProjectTag = p.href ? "a" : "div";
+
+            return (
+              <ProjectTag
+                href={p.href}
+                key={p.n}
+                target={p.href ? "_blank" : undefined}
+                rel={p.href ? "noreferrer" : undefined}
+                className="group block py-10 md:py-14 relative overflow-hidden lift"
+              >
+                <div className="grid md:grid-cols-12 gap-6 items-baseline relative z-10">
+                  <div className="md:col-span-1 text-sm text-muted-foreground">
+                    {p.n}
                   </div>
-                  <span className="w-12 h-12 shrink-0 rounded-full border border-border flex items-center justify-center group-hover:bg-accent group-hover:border-accent group-hover:text-accent-foreground transition-all duration-500">
-                    <ArrowUpRight className="w-4 h-4 group-hover:rotate-45 transition-transform duration-500" />
-                  </span>
+                  <div className="md:col-span-5">
+                    <h3 className="font-display text-4xl md:text-6xl text-foreground tracking-tight transition-transform duration-700 group-hover:translate-x-2">
+                      {p.title}
+                    </h3>
+                  </div>
+                  <div className="md:col-span-4 text-muted-foreground text-base leading-relaxed max-w-md">
+                    {p.description}
+                  </div>
+                  <div className="md:col-span-2 flex items-start justify-between md:justify-end gap-4">
+                    <div className="text-sm text-muted-foreground">
+                      <div>{p.year}</div>
+                      <div className="text-foreground/70 mt-1">{p.role}</div>
+                    </div>
+                    <span className="w-12 h-12 shrink-0 rounded-full border border-border flex items-center justify-center group-hover:bg-accent group-hover:border-accent group-hover:text-accent-foreground transition-all duration-500">
+                      <ArrowUpRight className="w-4 h-4 group-hover:rotate-45 transition-transform duration-500" />
+                    </span>
+                  </div>
                 </div>
-              </div>
 
-              <div className="mt-6 md:ml-[8.33%] flex flex-wrap gap-2">
-                {p.stack.map((s) => (
-                  <span
-                    key={s}
-                    className="text-xs px-3 py-1 rounded-full border border-border text-muted-foreground"
-                  >
-                    {s}
-                  </span>
-                ))}
-              </div>
+                <div className="mt-6 md:ml-[8.33%] flex flex-wrap gap-2">
+                  {p.stack.map((s) => (
+                    <span
+                      key={s}
+                      className="text-xs px-3 py-1 rounded-full border border-border text-muted-foreground"
+                    >
+                      {s}
+                    </span>
+                  ))}
+                </div>
 
-              <div className="absolute inset-0 bg-secondary/40 -z-0 translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-out" />
-            </a>
-          ))}
+                <div className="absolute inset-0 bg-secondary/40 -z-0 translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-out" />
+              </ProjectTag>
+            );
+          })}
         </div>
       </div>
     </section>
