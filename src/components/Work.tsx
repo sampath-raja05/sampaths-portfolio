@@ -16,6 +16,7 @@ const projects = [
     title: "HireGenius",
     year: "2025",
     role: "Full-stack · AI Interviews",
+    href: "https://hire-genius-five.vercel.app/",
     description:
       "AI interview platform with interviewer and interviewee flows, smart onboarding, scheduling, credit-based payments, video sessions and feedback.",
     stack: ["Next.js", "Clerk", "Prisma", "Supabase", "Tailwind CSS"],
