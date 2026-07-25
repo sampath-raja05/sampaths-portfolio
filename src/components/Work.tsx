@@ -4,7 +4,7 @@ const projects = [
   {
     n: "01",
     title: "Propspace AI",
-    year: "2025",
+    year: "2026",
     role: "Full-stack · AI Analytics",
     href: "https://prop-space-ai-w8t9.vercel.app/",
     description:
@@ -14,22 +14,22 @@ const projects = [
   {
     n: "02",
     title: "HireGenius",
-    year: "2025",
+    year: "2026",
     role: "Full-stack · AI Interviews",
     href: "https://hire-genius-five.vercel.app/",
     description:
       "AI interview platform with interviewer and interviewee flows, smart onboarding, scheduling, credit-based payments, video sessions and feedback.",
     stack: ["Next.js", "Clerk", "Prisma", "Supabase", "Tailwind CSS"],
   },
-  {
+{
     n: "03",
-    title: "Weather Now",
-    year: "2024",
-    role: "Frontend",
-    href: "https://weather-now-gamma-livid.vercel.app/",
+    title: "TrackSpend AI",
+    year: "2026",
+    role: "Full Stack",
+    href: "https://track-spend-ai-sandy.vercel.app/",
     description:
-      "Responsive city-based weather app with live API data, real-time temperature, humidity and wind details, plus graceful invalid-city handling.",
-    stack: ["React.js", "JavaScript", "HTML", "CSS", "REST APIs"],
+      "Subscription audit tool with AI-generated executive summaries, automated email delivery, and shareable audit links.",
+    stack: ["Next.js", "Prisma", "Supabase", "Anthropic Claude API", "Resend"],
   },
 ];
 
